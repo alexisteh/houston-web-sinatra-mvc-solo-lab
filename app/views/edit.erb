@@ -1,0 +1,12 @@
+<h1>Edit a puppy's details:</h1>
+
+<form method="POST" action="/puppies/<%=@puppy.id%>"> 
+<input type="hidden" name="_method" value="patch"> 
+<label>Name:</label> 
+<input type="text" name="name" value="<%=@puppy.name%>"> 
+<br/>
+<label>Breed:</label> 
+<input type="text" name="breed" value="<%=@puppy.breed%>"> 
+
+<input type="submit" id="Submit">
+</form> 

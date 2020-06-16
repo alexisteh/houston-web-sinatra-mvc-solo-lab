@@ -1,0 +1,11 @@
+<h1>Puppy Details!</h1>
+
+<p>Name: <%=@puppy.name%></p>
+<p>Breed: <%=@puppy.breed%></p>
+
+<p> <a href="/puppies/<%=@puppy.id%>/edit"> Click here to edit this puppy </a></p>
+
+<form action="/puppies/<%=@puppy.id%>/delete" method="post">
+<input type="hidden" name="_method" value="delete" />
+<input type="submit" value="Delete this puppy"/> 
+</form>
